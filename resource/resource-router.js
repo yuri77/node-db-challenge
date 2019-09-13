@@ -13,8 +13,8 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
   const { name, description } = req.body;
   Resources.insert({ name, description })
-    .then(res => status(200).end())
-    .catch(err => res.status(404).end());
+    .then(resource => res.status(201).json(resource))
+    .catch(err => res.status(500).end());
 });
 
 module.exports = router;

@@ -7,8 +7,7 @@ exports.seed = function(knex) {
     },
     {
       description: "review lecture video",
-      project_id: 1,
-      completed: true
+      project_id: 1
     },
     {
       description: "google regx",
