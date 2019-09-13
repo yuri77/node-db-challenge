@@ -7,9 +7,9 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   const { name, description, completed } = req.body;
-  Projects.insert()
+  Projects.insert({ name, description, completed })
     .then(response => {
-      console.log(res);
+      console.log(response);
       res.status(201).end();
     })
     .catch(err => res.status(500).end());

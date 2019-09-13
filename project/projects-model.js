@@ -7,5 +7,5 @@ function get() {
 }
 
 function insert(project) {
-  return db("projects").insert(project, "id");
+  return db("projects").insert(project);
 }
