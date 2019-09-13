@@ -1,7 +1,8 @@
 const router = require("express").Router();
+const Tasks = require("./task-model.js");
 
 router.get("/", (req, res) => {
-  res.send("task router up");
+  Tasks.get().then(tasks => res.status(200).json(tasks));
 });
 
 module.exports = router;

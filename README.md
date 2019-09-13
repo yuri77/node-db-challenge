@@ -40,11 +40,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+Relational Database is one kind of database management schema. It uses primary key and foreign keys to set relationship between tables. SQL is a tool used to retrieve data from the database
+
 - [ ] Why do tables need a `primary key`?
+
+each row in a table needs to be uniquely identified
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+foreign key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+composed (primary ) key or composed unique pair
 
 ## Minimum Viable Product
 
